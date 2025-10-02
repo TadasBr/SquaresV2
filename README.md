@@ -53,9 +53,9 @@ I spent about 4 hours on this first version. The plan is to use the remaining ti
 
 ## Code explanations
 ### Controllers and Endpoints
-**PointsController.cs** handles all CRUD operations for points (GET, POST, PUT, DELETE, and bulk import). The squares endpoint is currently part of this controller as GET /api/points/squares.
+**PointsController** handles all CRUD operations for points (GET, POST, PUT, DELETE, and bulk import). The squares endpoint is currently part of this controller as GET /api/points/squares.
 
-I thought about making a separate SquaresController with GET /api/squares, but since squares are derived from points and not stored in the database, it felt more natural to keep them here.
+I thought about making a separate **SquaresController** with GET /api/squares, but since squares are derived from points and not stored in the database, it felt more natural to keep them here. I think it makes this API lest RESTful.
 
 ### In-memory database
 I didn't set up a Dockerfile this time since I haven't done that before and wanted a quicker setup. Instead, I used an in-memory database.
