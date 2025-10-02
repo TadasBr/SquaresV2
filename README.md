@@ -64,5 +64,10 @@ One limitation is that I couldn't enforce unique constraints at the database lev
 
 Because of In-memory database you could say that this API is not stateless.
 
+## Time used
+Overall I used about 8 hours to complete this task:
+* V1 ~4hours
+* V2 ~4hours
+
 ## How to run
 Simply open the solution and run it as an HTTP application. The documentation (Swagger) should open automatically. If it doesn't, navigate to: http://localhost:5229/swagger/index.html
