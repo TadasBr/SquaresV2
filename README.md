@@ -1,7 +1,7 @@
 # Squares V1
 Squares V1 was my first try at this problem. You can check the repo here: https://github.com/TadasBr/Squares
 
-I spent about 4 hours on this first version. The plan is to use the remaining time (~4 hours) to finish Squares V2, mainly focusing on:
+I spent about 4 hours on this first version. On my first attempt i was focusing on:
 * Building a RESTful API with a clean structure
 * Implementing and polishing the main functionalities
 
@@ -18,7 +18,7 @@ I spent about 4 hours on this first version. The plan is to use the remaining ti
 - [x] The solution code must be in a `git` repository
 - [x] The API should be implemented using .NET Core framework (ideally the newest stable version)
 - [x] The API must have some sort of persistance layer
-- [x] After sending a request the consumer shouldn't wait more than 5 seconds for a response
+- [x] After sending a request the consumer shouldn't wait more than 5 seconds for a response *** Not sure here, probably with enough data it could take that long, since Squares calculation method is O(n^2) ***
 
 ### Bonus points stuff!
 - [x] RESTful API

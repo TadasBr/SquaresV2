@@ -54,3 +54,6 @@ TestResult.xml
 nunit-*.xml
 
 *.vsidx
+Squares/.vs/Squares/CopilotIndices/17.14.995.13737/CodeChunks.db-wal
+Squares/.vs/Squares/CopilotIndices/17.14.995.13737/SemanticSymbols.db-wal
+Squares/.vs/Squares/DesignTimeBuild/.dtbcache.v2
