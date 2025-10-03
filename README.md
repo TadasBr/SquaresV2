@@ -18,12 +18,12 @@ I spent about 4 hours on this first version. On my first attempt i was focusing 
 - [x] The solution code must be in a `git` repository
 - [x] The API should be implemented using .NET Core framework (ideally the newest stable version)
 - [x] The API must have some sort of persistance layer
-- [x] After sending a request the consumer shouldn't wait more than 5 seconds for a response *** Not sure here, probably with enough data it could take that long, since Squares calculation method is O(n^2) ***
+- [x] After sending a request the consumer shouldn't wait more than 5 seconds for a response **Not sure yet - with enough data, it could potentially take that long, since the squares calculation method is O(n^2)**
 
 ### Bonus points stuff!
 - [x] RESTful API
 - [x] Documentation generated from code (hint - `Swagger`)
-- [x] Automated tests
+- [x] Automated tests **Not fully covered by tests - includes positive cases for business layer methods and additional cases for square calculation**
 - [ ] Containerization/deployment (hint - `Docker`)
 - [x] Performance considerations
 - [ ] Measuring SLI's
