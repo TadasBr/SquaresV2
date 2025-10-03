@@ -44,6 +44,7 @@ I spent about 4 hours on this first version. On my first attempt i was focusing 
 ### 3 Add a minimal set of automated tests to cover the core functionality, especially square detection:
 * Positive cases for all methods
 * Extra tests for squares since it's the main feature
+* I'm spending this much effort on tests because unit tests are specifically designed to keep things safe when updating or changing code. They make sure nothing breaks unexpectedly later. But since this is the very first release, I just want to wrap it up properly so we have a solid foundation going forward.
 
 ### 4 Optimize the squares identification process (this is the most computation-heavy part):
 * Use caching to avoid recalculating squares for the same set of points
