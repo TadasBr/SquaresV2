@@ -14,7 +14,7 @@ public class PointsService(IPointsRepository pointsRepository) : IPointsService
     private static HashSet<(int X, int Y)>? _cachedPointSet;
     private static readonly object _cacheLock = new();
 
-    private void InvalidateSquaresCache()
+    private static void InvalidateSquaresCache()
     {
         lock (_cacheLock)
         {
