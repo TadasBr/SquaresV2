@@ -86,10 +86,9 @@ public class PointsService(IPointsRepository pointsRepository) : IPointsService
         }
 
         List<Point> existingPoints = await _pointsRepository.GetAllAsync();
-        HashSet<(int X, int Y)> existingSet = existingPoints.Select(p => (p.X, p.Y)).ToHashSet();
 
         List<Point> newPoints = points
-            .Where(p => !existingSet.Contains((p.X, p.Y)))
+            .Where(p => !existingPoints.Any(ep => ep.X == p.X && ep.Y == p.Y))
             .ToList();
 
         if (newPoints.Count == 0)
@@ -103,6 +102,7 @@ public class PointsService(IPointsRepository pointsRepository) : IPointsService
 
         return newPoints;
     }
+
 
     public async Task<List<Square>> IdentifySquaresAsync()
     {
